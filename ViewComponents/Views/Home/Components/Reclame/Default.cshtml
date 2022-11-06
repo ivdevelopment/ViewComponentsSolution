@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "Default";
+}
+
+<h1>@Model.ToUpper()</h1>
+
+@model string
+@{
+    var afbeelding = $"/images/{Model}.jpg";
+}
+<img src="@afbeelding" alt="@Model" width="200" />
+
